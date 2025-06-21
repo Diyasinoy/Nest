@@ -1,4 +1,4 @@
-# 🏢 Company Website – Internship Project
+# 🏢 Company Website 
 
 This is a fully responsive company website built using **HTML** and **CSS** as part of my internship. The site reflects a modern design approach, ensuring accessibility, usability, and a clean UI across all devices.
 
