@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Services</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .service-card {
+      padding: 20px;
+      border: 1px solid #dee2e6;
+      border-radius: 10px;
+      background-color: #f8f9fa;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .service-card:hover {
+      background-color: #e7f1ff;
+      transform: translateY(-5px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .service-card a {
+      font-size: 1.1rem;
+      font-weight: 500;
+      color: #0d6efd;
+      text-decoration: none;
+    }
+
+    .service-card a:hover {
+      color: #084298;
+    }
+    .custom-navbar {
+  background-color: #0d6efd; /* Bootstrap primary blue */
+}
+.custom-navbar .nav-link:hover {
+  color: #ffc107 !important; /* Optional: Yellow hover */
+}
+
+
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      padding: 20px;
+      background: #f1f1f1;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+<!-- Header -->
+<nav class="navbar navbar-expand-lg custom-navbar shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold text-white" href="index.html">Nest Digital</a>
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link text-white" href="about.html">About Us</a></li>
+        <li class="nav-item"><a class="nav-link text-white fw-semibold" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <!-- Body -->
+
+ <div class="container">
+  <div class="text-center mb-4">
+    <h1 class="display-4">Our Services</h1>
+    <p class="lead">Explore the range of services we offer to help your business grow.</p>
+  </div>
+
+  <div class="row justify-content-center">
+    <!-- Card 1 -->
+    <div class="col-md-3 mb-4">
+      <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/2721/2721295.png" class="card-img-top" alt="Software Engineering" style="height: 150px; object-fit: contain;">
+        <div class="card-body text-center">
+          <h5 class="card-title">Software Engineering & Development</h5>
+          <a href="software.html" class="btn btn-primary">Learn More</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="col-md-3 mb-4">
+      <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/4259/4259067.png" class="card-img-top" alt="Data Analytics" style="height: 150px; object-fit: contain;">
+        <div class="card-body text-center">
+          <h5 class="card-title">Data Analytics & Artificial Intelligence</h5>
+          <a href="analytics.html" class="btn btn-primary">Learn More</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="col-md-3 mb-4">
+      <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/3262/3262937.png" class="card-img-top" alt="Cloud Transformation" style="height: 150px; object-fit: contain;">
+        <div class="card-body text-center">
+          <h5 class="card-title">Cloud Computing and Transformation</h5>
+          <a href="cloud.html" class="btn btn-primary">Learn More</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="col-md-3 mb-4">
+      <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/4359/4359963.png" class="card-img-top" alt="Business Automation" style="height: 150px; object-fit: contain;">
+        <div class="card-body text-center">
+          <h5 class="card-title">Business Process Automation</h5>
+          <a href="automation.html" class="btn btn-primary">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Nest Digital Clone
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,259 @@
+/* -----------------------------------
+   Base Styles
+----------------------------------- */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #a6bada;
+  color: #1a1a1a;
+  line-height: 1.6;
+}
+
+h1, h2 {
+  font-weight: 600;
+  color: #003366;
+}
+
+.lead {
+  font-size: 1.25rem;
+  color: #080202;
+}
+
+section {
+  padding: 60px 0;
+}
+
+.container {
+  padding: 60px 15px;
+  animation: fadeIn 0.8s ease-in;
+}
+
+/* -----------------------------------
+   Navbar
+----------------------------------- */
+.navbar {
+  background-color: #06448c;
+}
+
+.navbar-brand,
+.nav-link {
+  color: white !important;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #FF3C38 !important;
+  font-weight: 500;
+}
+
+/* -----------------------------------
+   Hero Section
+----------------------------------- */
+.hero-section {
+  background-image: url('https://askonlinesolutions.com/wp-content/uploads/2016/06/Company.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: #002B5B;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(168, 189, 215, 0.4);
+  z-index: 1;
+}
+
+.hero-overlay {
+  position: relative;
+  z-index: 2;
+  background: rgba(171, 196, 227, 0.5);
+  backdrop-filter: blur(2px);
+  padding: 3rem;
+  border-radius: 12px;
+}
+
+/* -----------------------------------
+   Why Choose Us Section
+----------------------------------- */
+.why-choose-section {
+  background-color: #98afd1;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+  padding: 2.5rem;
+}
+.why-section-bg {
+    background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: 60px 0;
+  color: #fff;
+}
+
+
+.why-section-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 43, 91, 0.6);
+  z-index: 1;
+}
+
+.why-content {
+  position: relative;
+  z-index: 2;
+  background: rgba(247, 247, 247, 0.95);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+  color: #002b5b;
+}
+
+
+
+.indu {
+  text-align: center;
+  padding: 10px;
+    position: relative;
+  z-index: 2;
+  background: rgba(168, 194, 210, 0.95);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+  color: #002b5b;
+
+}
+/* -----------------------------------
+   Buttons & Form Elements
+----------------------------------- */
+.btn-dark {
+  background-color: #002B5B;
+  border: none;
+}
+
+.btn-dark:hover {
+  background-color: #FF3C38;
+  color: white;
+}
+
+form input,
+form textarea {
+  border: 2px solid #002B5B;
+  border-radius: 4px;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #FF3C38;
+  box-shadow: 0 0 5px rgba(255, 60, 56, 0.3);
+}
+
+/* -----------------------------------
+   List Styling
+----------------------------------- */
+ul.fs-5 {
+  list-style: none;
+  margin-top: 30px;
+  padding-left: 0;
+}
+
+ul.fs-5 li {
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border-left: 4px solid #dc3545;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+ul.fs-5 li:hover {
+  background-color: #e2e6ea;
+  transform: translateX(5px);
+  cursor: pointer;
+}
+
+/* -----------------------------------
+   Industry Cards Section
+----------------------------------- */
+.industry-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 20px;
+}
+
+.industry-card {
+  background-color: #ffffff;
+  border: 2px solid #1b32a6;
+  border-radius: 16px;
+  width: 160px;
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 16px rgba(0, 119, 204, 0.1);
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.industry-card:hover {
+  transform: translateY(-10px);
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: white;
+}
+
+.industry-card i {
+  font-size: 40px;
+  margin-bottom: 10px;
+  color: #0055aa;
+  transition: color 0.3s;
+}
+
+.industry-card:hover i {
+  color: white;
+}
+
+.industry-card span {
+  font-size: 16px;
+  font-weight: 600;
+  color: #004080;
+}
+
+/* -----------------------------------
+   Footer
+----------------------------------- */
+footer {
+  background-color: #06448c;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      padding: 20px;
+     
+    }
+
+/* -----------------------------------
+   Animations
+----------------------------------- */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* -----------------------------------
+   Responsive Design
+----------------------------------- */
+@media (max-width: 768px) {
+  .text-center {
+    text-align: center !important;
+  }
+}
